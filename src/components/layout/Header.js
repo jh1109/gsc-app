@@ -21,8 +21,8 @@ const Header = () => {
                             <li>C-Level DX</li>
                         </ul>
                     </li>
-                    <Link to="/techfrontiers">부트캠프</Link>
-                    <Link to="/about">회사소개</Link>
+                    <li><Link to="/techfrontiers">부트캠프</Link></li>
+                    <li><Link to="/about">회사소개</Link></li>
                     <MainMenuList menu="문의하기" menudetail={["교육 문의하기", "대관 문의하기"]} />
                 </ul>
             </nav>
