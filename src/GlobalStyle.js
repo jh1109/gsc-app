@@ -39,6 +39,11 @@ ${reset}
     height: 100%;
   }
 
+  a{
+    text-decoration: none;
+    color: black;
+  }
+
   .a11yHidden {
     overflow: hidden;
     position: absolute !important;
