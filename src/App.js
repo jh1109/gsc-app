@@ -1,14 +1,19 @@
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import GlobalStyle from './GlobalStyle';
+import MainPage from './pages/Mainpage';
+import ContactPage from './pages/ContactPage';
+
+const router = createBrowserRouter([
+  { path: '/', element: <MainPage />},
+  { path: '/contact', element: <ContactPage />},
+]);
 
 function App() {
   return (
     <>
     <GlobalStyle/>
-    <div>
-      <h1>Hello</h1><h2>GSC!</h2>
-      <p>안녕하세요</p>
-    </div>
+    <RouterProvider router={router} />
     </>
   );
 }
