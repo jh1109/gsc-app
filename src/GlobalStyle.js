@@ -1,4 +1,4 @@
-import { createGlobalStyle} from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
 
 const GlobalStyle = createGlobalStyle`
@@ -12,7 +12,7 @@ ${reset}
 
   main {
     padding-top: 4rem;
-    width: 40rem;
+    // width: 40rem;
     height: 100vh;
     background: white;
     margin: auto;

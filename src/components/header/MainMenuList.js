@@ -1,10 +1,10 @@
-import MainMenuListDetail from "./MainMenuListDetail";
+// import MainMenuListDetail from "./MainMenuListDetail";
 
-const MainMenuList = ({menu, menudetail}) => {
+const MainMenuList = ({ menu, menudetail }) => {
     return (
         <li>
             <button type="butto">{menu}</button>
-            <MainMenuListDetail list={menudetail}/>
+            {/* <MainMenuListDetail list={menudetail} /> */}
         </li>
     )
 };
