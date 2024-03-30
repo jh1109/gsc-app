@@ -1,0 +1,48 @@
+.service_section {
+  display: flex;
+  gap: 2rem;
+  padding: 1.6rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.content_area {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.content_area h2 {
+  padding-top: 2rem;
+  font-size: 1.6rem;
+}
+
+.content_area p {
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.btn_area {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 0.6rem;
+}
+.content_area a {
+  background-color: #efefef;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1.4rem;
+  height: 3rem;
+  padding: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn_area .big_btn {
+  width: 100%;
+}
+
+.btn_area .small_btn {
+  width: 48%;
+}

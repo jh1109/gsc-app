@@ -53,6 +53,14 @@ ${reset}
     height: 1px;
     margin: -1px;
   }
+
+  .boldBlue {
+    font-weight: 600;
+    color: blue;
+  }
+  .bold {
+    font-weight: 600;
+  }
 `;
 
 export default GlobalStyle;
