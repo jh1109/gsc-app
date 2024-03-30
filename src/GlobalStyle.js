@@ -11,7 +11,7 @@ ${reset}
   }
 
   main {
-    padding-top: 4rem;
+    // padding-top: 4rem;
     // width: 40rem;
     height: 100vh;
     background: white;
