@@ -1,6 +1,7 @@
 import MainBanner from "../components/banner/MainBanner";
 import Service from "../components/mainPage/Service";
 import Service2 from "../components/mainPage/Service2";
+import ClientArea from "./ClientArea";
 
 const MainPage = () => {
     return (
@@ -8,6 +9,7 @@ const MainPage = () => {
             <MainBanner />
             <Service />
             <Service2 />
+            <ClientArea />
         </>
     )
 };
