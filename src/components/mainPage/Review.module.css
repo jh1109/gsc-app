@@ -1,0 +1,27 @@
+.reviewWrapper {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.reviewItems {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1rem;
+}
+
+.reviewWrapper a {
+  border: 1px solid blue;
+  border-radius: 10px;
+  margin-right: 1rem;
+  padding: 1rem;
+  background-color: blue;
+  color: #ffffff;
+}
+
+.btnArea {
+  margin: 1rem;
+}

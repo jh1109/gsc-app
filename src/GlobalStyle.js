@@ -75,6 +75,12 @@ ${reset}
   .bigfont3 {
     font-size: 1.6rem;
   }
+  .smallfont1 {
+    font-size: 0.8rem;
+  }
+  .smallfont2 {
+    font-size: 0.6rem;
+  }
 `;
 
 export default GlobalStyle;
