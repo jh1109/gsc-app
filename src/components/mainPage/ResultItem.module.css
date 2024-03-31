@@ -1,0 +1,16 @@
+.iconWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  width: 10rem;
+  height: 10rem;
+  border: solid #000000;
+  margin-bottom: 1.4rem;
+}
+
+.title {
+  margin-bottom: 0.6rem;
+}

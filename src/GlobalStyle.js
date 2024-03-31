@@ -11,8 +11,6 @@ ${reset}
   }
 
   main {
-    // padding-top: 4rem;
-    // width: 40rem;
     height: 100vh;
     background: white;
     margin: auto;
@@ -20,6 +18,12 @@ ${reset}
     @media (max-width: 768px) {
       width: 100%;
     }
+  }
+
+  .mainContent {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   ul,li {
@@ -60,6 +64,16 @@ ${reset}
   }
   .bold {
     font-weight: 600;
+  }
+
+  .bigfont1 {
+    font-size: 1.2rem;
+  }
+  .bigfont2 {
+    font-size: 1.4rem;
+  }
+  .bigfont3 {
+    font-size: 1.6rem;
   }
 `;
 
