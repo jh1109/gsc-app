@@ -1,3 +1,4 @@
+import ContactBanner from "../components/banner/ContactBanner";
 import MainBanner from "../components/banner/MainBanner";
 import Result from "../components/mainPage/Result";
 import Review from "../components/mainPage/Review";
@@ -14,6 +15,7 @@ const MainPage = () => {
             <ClientArea />
             <Result />
             <Review />
+            <ContactBanner />
         </>
     )
 };
