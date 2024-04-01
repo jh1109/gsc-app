@@ -1,11 +1,17 @@
+.headerWrapper {
+  /* background-color: orange; */
+  border-bottom: 2px solid #efefef;
+}
+
 .header {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  padding: 10px;
+  padding-top: 10px;
   display: flex;
   flex-flow: row nowrap;
   gap: 40px;
+  /* background-color: skyblue; */
 }
 
 img {
@@ -15,6 +21,7 @@ img {
 
 nav {
   flex-grow: 1;
+  /* background-color: pink; */
 }
 
 .nav_list {
@@ -23,5 +30,54 @@ nav {
   justify-content: space-between;
   font-weight: 600;
   padding-top: 20px;
-  margin: 0 40px;
+  margin-right: 40px;
+  background-color: aqua;
+}
+
+.navLi {
+  /* background-color: blueviolet; */
+  position: relative;   
+  display: block;
+  width: 100%;
+}
+
+.navBtn, nav a {
+  cursor: default;
+  text-align: center;
+  /* background-color: pink; */
+  display: block;
+  width: 100%;
+}
+
+.navLiItem {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.3rem;
+  align-items: center;
+  position: absolute;
+  border-radius: 0 0 10px 10px;
+  width: 100%;
+  border-top: 4px solid #000000;
+}
+
+.navLiItem li {
+  /* background-color: skyblue; */
+  padding: 0.8rem;
+  width: 100%;
+}
+
+.navLiItem li:hover {
+  background-color: #efefef;
+  overflow: hidden;
+}
+.navLiItem li:hover:last-child {
+  /* background-color: #efefef; */
+  /* overflow: hidden; */
+  border-radius: 0 0 10px 10px;
+
+}
+
+.navLiItem li a {
+  cursor: pointer;
 }
