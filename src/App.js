@@ -11,6 +11,9 @@ import ICTedu from './pages/ICTedu';
 import Cases from './pages/Cases';
 import Classroom from './pages/Classroom';
 import ContactClassroom from './pages/ContactClassroom';
+import CLevelDX from './pages/CLevelDX';
+import TeamsDX from './pages/TeamsDX';
+import OjtDX from './pages/OjtDX';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +29,9 @@ const router = createBrowserRouter([
       { path: '/service-cases', element: <Cases />},
       { path: '/service-classroom', element: <Classroom />},
       { path: '/contact-classroom', element: <ContactClassroom />},
+      { path: '/b2b-ojtDX', element: <OjtDX />},
+      { path: '/b2b-teamsDX', element: <TeamsDX />},
+      { path: '/b2b-CLevelDX', element: <CLevelDX />},
     ],
   },
 

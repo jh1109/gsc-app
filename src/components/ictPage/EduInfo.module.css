@@ -1,0 +1,26 @@
+.eduInfoWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+}
+
+.subTitle {
+    font-size: 1.2rem;
+}
+
+.listWrapper {
+    margin-top: 2.4rem;
+}
+
+.lists {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2.6rem;
+}
