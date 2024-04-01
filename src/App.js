@@ -10,6 +10,7 @@ import RootLayout from './pages/Root';
 import ICTedu from './pages/ICTedu';
 import Cases from './pages/Cases';
 import Classroom from './pages/Classroom';
+import ContactClassroom from './pages/ContactClassroom';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,7 @@ const router = createBrowserRouter([
       { path: '/service-ICTedu', element: <ICTedu />},
       { path: '/service-cases', element: <Cases />},
       { path: '/service-classroom', element: <Classroom />},
+      { path: '/contact-classroom', element: <ContactClassroom />},
     ],
   },
 

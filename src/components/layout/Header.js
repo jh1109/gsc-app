@@ -7,11 +7,35 @@ import NavLiItem from '../header/NavLiItem';
 const Header = () => {
     const [ondetail, setOndetail] = useState(false);
     const [arrow, setArrow] = useState(false);
+    const [onContact, setOnContact] = useState(false);
+    const [contactArrow, setContactArrow] = useState(false);
 
     const handleMouseOver = () => {
         setOndetail(!ondetail);
         setArrow(!arrow);
     }
+    const handleContact = () => {
+        setOnContact(!onContact);
+        setContactArrow(!contactArrow);
+    }
+
+    const serviceList = [{
+        name: "맞춤형 ICT 교육",
+        usrl: "/service-ICTedu"
+    },{
+        name: "교육 사례",
+        usrl: "/service-cases"
+    },{
+        name: "교육장 대관",
+        usrl: "/service-classroom"
+    }]
+    const contactList = [{
+        name: "교육 문의하기",
+        usrl: "/contact"
+    },{
+        name: "교육장 대관하기",
+        usrl: "/contact-classroom"
+    }]
 
     return (
         <div className={classes.headerWrapper}>
@@ -26,7 +50,7 @@ const Header = () => {
                 <ul className={classes.nav_list}>
                     <li className={classes.navLi}>
                         <button type="button" className={classes.navBtn} onClick={handleMouseOver}>서비스 <IoIosArrowDown className={!arrow ? classes.arrowIcon : classes.arrowIconTrans}/></button>
-                        {ondetail && <NavLiItem handleMouseOver={handleMouseOver}/>}
+                        {ondetail && <NavLiItem handleMouseOver={handleMouseOver} list={serviceList}/>}
                     </li>
                     <li className={classes.navLi}>
                         <Link to="/b2b">기업교육 <IoIosArrowDown className={classes.arrowIcon}/></Link>
@@ -39,11 +63,8 @@ const Header = () => {
                     <li className={classes.navLi}><Link to="/techfrontiers">부트캠프</Link></li>
                     <li className={classes.navLi}><Link to="/about">회사소개</Link></li>
                     <li className={classes.navLi}>
-                        <button type="button" className={classes.navBtn}>문의하기 <IoIosArrowDown className={classes.arrowIcon}/></button>
-                        <ul>
-                            {/* <li>교육 문의하기</li> */}
-                            {/* <li>교육장 대관하기</li> */}
-                        </ul>
+                        <button type="button" className={classes.navBtn} onClick={handleContact}>문의하기 <IoIosArrowDown className={!contactArrow ? classes.arrowIcon : classes.arrowIconTrans}/></button>
+                        {contactArrow && <NavLiItem handleMouseOver={handleContact} list={contactList}/>}
                     </li>
                 </ul>
             </nav>
