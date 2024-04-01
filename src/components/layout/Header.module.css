@@ -42,7 +42,6 @@ nav {
 }
 
 .navBtn, nav a {
-  cursor: default;
   text-align: center;
   /* background-color: pink; */
   display: block;
@@ -53,35 +52,8 @@ nav {
   transform: translate(0, 20%);
 }
 
-.navLiItem {
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  margin-top: 1.3rem;
-  align-items: center;
-  position: absolute;
-  border-radius: 0 0 10px 10px;
-  width: 100%;
-  border-top: 4px solid #000000;
+.arrowIconTrans {
+  transform: scaleY(-1);
 }
 
-.navLiItem li {
-  /* background-color: skyblue; */
-  padding: 0.8rem;
-  width: 100%;
-}
 
-.navLiItem li:hover {
-  background-color: #efefef;
-  overflow: hidden;
-}
-.navLiItem li:hover:last-child {
-  /* background-color: #efefef; */
-  /* overflow: hidden; */
-  border-radius: 0 0 10px 10px;
-
-}
-
-.navLiItem li a {
-  cursor: pointer;
-}

@@ -1,8 +1,18 @@
 import { Link } from 'react-router-dom';
 import classes from './Header.module.css';
 import { IoIosArrowDown } from "react-icons/io";
+import { useState } from 'react';
+import NavLiItem from '../header/NavLiItem';
 
 const Header = () => {
+    const [ondetail, setOndetail] = useState(false);
+    const [arrow, setArrow] = useState(false);
+
+    const handleMouseOver = () => {
+        setOndetail(!ondetail);
+        setArrow(!arrow);
+    }
+
     return (
         <div className={classes.headerWrapper}>
          <header className={classes.header}>
@@ -15,12 +25,8 @@ const Header = () => {
                 <h2 className="a11yHidden">메인메뉴</h2>
                 <ul className={classes.nav_list}>
                     <li className={classes.navLi}>
-                        <button type="button" className={classes.navBtn}>서비스 <IoIosArrowDown className={classes.arrowIcon}/></button>
-                        <ul className={classes.navLiItem}>
-                            <li><Link to="/service-ICTedu">맞춤형 ICT교육</Link></li>
-                            <li><Link to="/service-cases">교육 사례</Link></li>
-                            <li><Link to="/service-classroom">교육장 대관</Link></li>
-                        </ul>
+                        <button type="button" className={classes.navBtn} onClick={handleMouseOver}>서비스 <IoIosArrowDown className={!arrow ? classes.arrowIcon : classes.arrowIconTrans}/></button>
+                        {ondetail && <NavLiItem handleMouseOver={handleMouseOver}/>}
                     </li>
                     <li className={classes.navLi}>
                         <Link to="/b2b">기업교육 <IoIosArrowDown className={classes.arrowIcon}/></Link>
