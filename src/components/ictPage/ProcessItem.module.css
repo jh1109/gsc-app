@@ -1,0 +1,26 @@
+.list {
+    background-color: skyblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 22rem;
+    border-radius: 20px;
+    border: 2px solid #000000;
+    padding: 1rem;
+}
+
+.list img {
+    width: 6rem;
+    border: 1px solid #000000;
+    height: 6rem;
+}
+
+.list span {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.list p {
+    font-size: 1rem;
+}
