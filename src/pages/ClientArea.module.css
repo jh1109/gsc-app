@@ -1,5 +1,9 @@
-.clientArea {
+.clientWrapper{
   background-color: #efefef;
+
+}
+
+.clientArea {
   padding: 2rem;
   margin: auto;
   display: flex;
@@ -20,4 +24,5 @@
   display: flex;
   flex-flow: row wrap;
   gap: 0.4rem;
+  justify-content: center;
 }
