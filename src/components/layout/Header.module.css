@@ -31,7 +31,7 @@ nav {
   font-weight: 600;
   padding-top: 20px;
   margin-right: 40px;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
 .navLi {
@@ -47,6 +47,10 @@ nav {
   /* background-color: pink; */
   display: block;
   width: 100%;
+}
+
+.arrowIcon {
+  transform: translate(0, 20%);
 }
 
 .navLiItem {
