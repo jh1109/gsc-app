@@ -9,6 +9,8 @@ const Header = () => {
     const [arrow, setArrow] = useState(false);
     const [onContact, setOnContact] = useState(false);
     const [contactArrow, setContactArrow] = useState(false);
+    const [onb2b, setOnb2b] = useState(false);
+    const [b2bArrow, setb2bArrow] = useState(false);
 
     const handleMouseOver = () => {
         setOndetail(!ondetail);
@@ -17,6 +19,10 @@ const Header = () => {
     const handleContact = () => {
         setOnContact(!onContact);
         setContactArrow(!contactArrow);
+    }
+    const handleB2b = () => {
+        setOnb2b(!onb2b);
+        setb2bArrow(!b2bArrow);
     }
 
     const serviceList = [{
@@ -28,6 +34,16 @@ const Header = () => {
     },{
         name: "교육장 대관",
         usrl: "/service-classroom"
+    }]
+    const b2bList = [{
+        name: "신입사원 DX",
+        usrl: "/b2b-ojtDX"
+    },{
+        name: "재직자 DX",
+        usrl: "/b2b-teamsDX"
+    },{
+        name: "C-Level DX",
+        usrl: "/b2b-CLevelDX"
     }]
     const contactList = [{
         name: "교육 문의하기",
@@ -53,12 +69,8 @@ const Header = () => {
                         {ondetail && <NavLiItem handleMouseOver={handleMouseOver} list={serviceList}/>}
                     </li>
                     <li className={classes.navLi}>
-                        <Link to="/b2b">기업교육 <IoIosArrowDown className={classes.arrowIcon}/></Link>
-                        <ul>
-                            {/* <li>신입사원 DX</li> */}
-                            {/* <li>재직자 DX</li> */}
-                            {/* <li>C-Level DX</li> */}
-                        </ul>
+                        <button type="button" className={classes.navBtn} onClick={handleB2b}>기업교육 <IoIosArrowDown className={!b2bArrow ? classes.arrowIcon : classes.arrowIconTrans}/></button>
+                        {b2bArrow && <NavLiItem handleMouseOver={handleB2b} list={b2bList}/>}
                     </li>
                     <li className={classes.navLi}><Link to="/techfrontiers">부트캠프</Link></li>
                     <li className={classes.navLi}><Link to="/about">회사소개</Link></li>
