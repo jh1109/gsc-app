@@ -1,10 +1,11 @@
 import React from 'react';
+import OnlyPBanner from '../components/banner/OnlyPBanner';
 
 const Cases = () => {
     return (
-        <div>
-            교육 사례 페이지 입니다.
-        </div>
+        <>
+            <OnlyPBanner />
+        </>
     );
 };
 
