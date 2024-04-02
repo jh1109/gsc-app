@@ -1,0 +1,17 @@
+.result {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.result p {
+  margin-bottom: 1rem;
+}
+
+.contentArea {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 5rem;
+}

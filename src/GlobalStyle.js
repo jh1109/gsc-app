@@ -1,4 +1,4 @@
-import { createGlobalStyle} from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
 
 const GlobalStyle = createGlobalStyle`
@@ -11,8 +11,6 @@ ${reset}
   }
 
   main {
-    padding-top: 4rem;
-    width: 40rem;
     height: 100vh;
     background: white;
     margin: auto;
@@ -20,6 +18,12 @@ ${reset}
     @media (max-width: 768px) {
       width: 100%;
     }
+  }
+
+  .mainContent {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   ul,li {
@@ -39,6 +43,11 @@ ${reset}
     height: 100%;
   }
 
+  a{
+    text-decoration: none;
+    color: black;
+  }
+
   .a11yHidden {
     overflow: hidden;
     position: absolute !important;
@@ -47,6 +56,30 @@ ${reset}
     width: 1px;
     height: 1px;
     margin: -1px;
+  }
+
+  .boldBlue {
+    font-weight: 600;
+    color: blue;
+  }
+  .bold {
+    font-weight: 600;
+  }
+
+  .bigfont1 {
+    font-size: 1.2rem;
+  }
+  .bigfont2 {
+    font-size: 1.4rem;
+  }
+  .bigfont3 {
+    font-size: 1.6rem;
+  }
+  .smallfont1 {
+    font-size: 0.8rem;
+  }
+  .smallfont2 {
+    font-size: 0.6rem;
   }
 `;
 

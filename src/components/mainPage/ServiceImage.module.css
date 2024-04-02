@@ -1,0 +1,7 @@
+.service_img {
+  display: block;
+  border: solid #000000;
+  border-radius: 20px;
+  width: 50%;
+  height: 25rem;
+}

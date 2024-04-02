@@ -1,7 +1,22 @@
+import ContactBanner from "../components/banner/ContactBanner";
+import MainBanner from "../components/banner/MainBanner";
+import Result from "../components/mainPage/Result";
+import Review from "../components/mainPage/Review";
+import Service from "../components/mainPage/Service";
+import Service2 from "../components/mainPage/Service2";
+import ClientArea from "./ClientArea";
 
 const MainPage = () => {
     return (
-        <><div>메인 페이지입니다.</div></>
+        <>
+            <MainBanner />
+            <Service />
+            <Service2 />
+            <ClientArea />
+            <Result />
+            <Review />
+            <ContactBanner />
+        </>
     )
 };
 

@@ -1,0 +1,21 @@
+.strengthWrapper {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pZone {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.8rem;
+}
+
+.itemWrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 3rem;
+}

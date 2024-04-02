@@ -1,0 +1,33 @@
+.reviewItemWrapper {
+  border: 3px solid #000000;
+  border-radius: 20px;
+  padding: 2rem 1rem;
+  width: 240px;
+  height: 300px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+
+.reviewItemWrapper p {
+  line-height: 1.6;
+}
+
+.reviewerArea {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+  gap: 1rem;
+}
+.reviewItemWrapper img {
+  width: 100px;
+  height: 70px;
+  display: block;
+  overflow: hidden;
+}
+
+
+.courseName {
+  display: block;
+  margin-bottom: -8px;
+}
