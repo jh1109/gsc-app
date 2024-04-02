@@ -1,0 +1,22 @@
+.casesUl {
+    background-color: #efefef;
+    display: inline-flex;
+    flex-flow: row nowrap;
+    padding: 0.8rem 1.2rem;
+    border-radius: 30px;
+    gap: 0.4rem;
+}
+
+.casesUl li {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.casesUl button {
+    /* background-color: skyblue; */
+    display: block;
+    padding: 0.6rem;
+    /* border-radius: 20px; */
+}
