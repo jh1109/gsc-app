@@ -43,3 +43,25 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 3rem;
 }
+
+.searchForm {
+    display: flex;
+    flex-flow: row nowrap;
+    border: 1px solid #000000;
+    border-radius: 10px;    
+    align-items: center;
+    font-size: 1.2rem;
+    margin-top: 5rem;
+}
+
+.searchForm input {
+    text-indent: 0.4rem;
+    width: 26rem;
+}
+
+.searchForm .icon {
+    height: 100%;
+    overflow: hidden;
+    width: 2rem;
+    padding: 0.2rem
+}

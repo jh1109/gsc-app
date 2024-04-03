@@ -30,10 +30,17 @@ ${reset}
     list-style: none;
   }
 
-  button, input {
+  button {
     background-color: transparent;
     border: none;
     cursor: pointer;
+    outline: none;
+    font: inherit;
+  }
+
+  input {
+    background-color: transparent;
+    border: none;
     outline: none;
     font: inherit;
   }

@@ -3,6 +3,7 @@ import classes from './CasesContent.module.css';
 import CaseTabBtn from './CaseTabBtn';
 import Case from './Case';
 import { CASES_DATA } from './casesData';
+import { FaSearch } from "react-icons/fa";
 
 
 const CasesContent = () => {
@@ -36,6 +37,11 @@ const CasesContent = () => {
                 ))}
                 </ul>
             )}
+            <form className={classes.searchForm}>
+                <label className="a11yHidden" htmlFor="searchCase">검색창</label>
+                <input type="text" id="searchCase" placeholder="궁금한 사례를 검색해 보세요."/>
+                <button type="submit"><FaSearch className={ classes.icon }  /></button>
+            </form>
         </div>
     );
 };
