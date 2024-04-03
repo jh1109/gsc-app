@@ -2,13 +2,13 @@ import React from 'react';
 import classes from './Case.module.css';
 import { Link } from 'react-router-dom';
 
-const Case = ({id, image, description}) => {
+const Case = ({item}) => {
     return (
-        <li key={id} className={classes.CaseWrapper}>
+        <li className={classes.CaseWrapper}>
             <Link to="https://blog.naver.com/PostList.naver?blogId=globalsoftwarecampus&from=postList&categoryNo=44">
-            <img src={image} alt={description} />
+                <img src={item.image} alt={item.description} />
             </Link>
-            <p>{description}</p>
+            <p>{item.description}</p>
         </li>
     );
 };
