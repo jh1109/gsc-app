@@ -10,14 +10,19 @@ const CasesContent = () => {
 
 
     function handleCaseTabBtn(selectedBtn) {
-        console.log(selectedBtn);
-        // caseList = selectedBtn;
-        console.log(setCaseList);
+        const selectedCaseList = CASES_DATA.filter((caseItem) => (
+            caseItem.group === selectedBtn
+        ));
+        setCaseList(selectedCaseList);
+    }
+
+    function handleAll() {
+        setCaseList(CASES_DATA);
     }
     return (
         <div className={`${"mainContent"} ${classes.CasesContentWrapper}`}>
             <ul className={classes.casesUl}>
-                <CaseTabBtn onSelect={()=>handleCaseTabBtn('전체')}>전체</CaseTabBtn><span>|</span>
+                <CaseTabBtn onSelect={handleAll}>전체</CaseTabBtn><span>|</span>
                 <CaseTabBtn onSelect={()=>handleCaseTabBtn('기업')}>기업</CaseTabBtn><span>|</span>
                 <CaseTabBtn onSelect={()=>handleCaseTabBtn('기관')}>기관</CaseTabBtn><span>|</span>
                 <CaseTabBtn onSelect={()=>handleCaseTabBtn('학교')}>학교</CaseTabBtn><span>|</span>
