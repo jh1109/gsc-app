@@ -1,9 +1,10 @@
 import React from 'react';
+import ClassroomStrength from '../components/classroom/ClassroomStrength';
 
 const Classroom = () => {
     return (
         <div>
-            교육장 대관 소개 페이지 입니다.
+            <ClassroomStrength />
         </div>
     );
 };

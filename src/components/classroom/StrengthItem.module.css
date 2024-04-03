@@ -1,0 +1,19 @@
+.strengthItemWrapper {
+    background-color: blue;
+    background: rgb(255 255 255 / 20%);
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.4rem;
+    width: 22rem;
+    text-align: center;
+    color: #ffffff;
+    gap: 1.8rem;
+    margin-bottom: -1rem;
+}
+
+.strengthItemWrapper p {
+    line-height: 1.4;
+}
