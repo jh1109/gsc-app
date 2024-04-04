@@ -21,27 +21,3 @@
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
-
-/* classroom */
-
-.pZoneWrapper a {
-    background-color: #000000;
-    padding: 1rem 1.6rem;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #ffffff;
-    border-radius: 10px;
-    display: inline-block;
-}
-
-.classroomWrapper {
-    background-color: blue;
-}
-
-.classroomWrapper .content, .subContent {
-    color: #ffffff;
-}
-
-.classroomTitle {
-    color: yellow;
-}
