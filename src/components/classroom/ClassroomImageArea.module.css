@@ -1,6 +1,36 @@
 .ImageAreaWrapper {
-    background-color: #efefef;
+    /* background-color: #efefef; */
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 3rem 0 3rem 1rem;
+}
+
+.ImageAreaWrapper h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 1.6rem;
+}
+
+.ImageAreaWrapper ul {
+    /* background-color: yellow; */
+    display: flex;
+    flex-flow: row nowrap;
+    font-size: 1.2rem;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+.ImageAreaWrapper ul button {
+    background-color: #ffffff;
+    border: 2px solid #efefef;
+    padding: 0.8rem 1rem;
+    border-radius: 20px;
+}
+.ImageAreaWrapper .test {
+    background-color: blue;
+}
+
+.ImageAreaWrapper ul button:hover {
+    background-color: #efefef;
 }

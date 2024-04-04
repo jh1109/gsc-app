@@ -40,7 +40,7 @@ const ClassroomSwiper = ({ dataList, alt }) => {
                 <div>
                     <span>{swiperIndex + 1}</span>
                     <span>{'/ '}</span>
-                    <span>{ Math.round((dataList.length + 1)/2) }</span>
+                    <span>{dataList.length - 1}</span>
                 </div>
                 <button type="button" onClick={handleNext}><FaArrowRight className={ classes.arrowIcon}/></button>
             </div>
