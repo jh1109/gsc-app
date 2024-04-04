@@ -30,7 +30,6 @@ const CasesContent = () => {
 
     function handleSearch(e) {
         e.preventDefault();
-        // setInputValue('');
         const searchCaseList = CASES_DATA.filter((caseItem) => (
             caseItem.description.includes(inputValue)
         ));
