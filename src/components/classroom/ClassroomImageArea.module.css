@@ -1,5 +1,4 @@
 .ImageAreaWrapper {
-    /* background-color: #efefef; */
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -13,7 +12,6 @@
 }
 
 .ImageAreaWrapper ul {
-    /* background-color: yellow; */
     display: flex;
     flex-flow: row nowrap;
     font-size: 1.2rem;
