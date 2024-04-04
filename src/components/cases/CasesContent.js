@@ -58,6 +58,7 @@ const CasesContent = () => {
                 ))}
                 </ul>
             )}
+            <p>1 | 2 | ...  #pagination</p>
             <form className={classes.searchForm} onSubmit={handleSearch}>
                 <label className="a11yHidden" htmlFor="searchCase">검색창</label>
                 <input type="text" id="searchCase" value={inputValue} onChange={handleInputValue} ref={ inputEl } placeholder="궁금한 사례를 검색해 보세요."/>
