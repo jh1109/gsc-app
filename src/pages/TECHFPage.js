@@ -2,6 +2,7 @@ import OnlyPBanner from "../components/banner/OnlyPBanner";
 import CardGuide from "../components/bootcamp/CardGuide";
 import Employment from "../components/bootcamp/Employment";
 import KDT from "../components/bootcamp/KDT";
+import TECHFReview from "../components/bootcamp/TECHFReview";
 import TechFResult from "../components/bootcamp/TechFResult";
 
 const TECHFPage = () => {
@@ -16,6 +17,7 @@ const TECHFPage = () => {
             <CardGuide />
             <TechFResult />
             <Employment />
+            <TECHFReview />
     </>
 )
 
