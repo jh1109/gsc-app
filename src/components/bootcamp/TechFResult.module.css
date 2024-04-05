@@ -1,0 +1,34 @@
+.techFResultWrapper {
+    text-align: center;
+    padding: 3rem;
+}
+
+
+.p1 {
+    font-size: 1.2rem;
+    margin-bottom: 1.6rem;
+}
+
+.p2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.techFResultWrapper p:nth-child(4) {
+    margin-top: 1.6rem;
+    line-height: 1.6;
+}
+
+.techFResultWrapper p:nth-child(5) {
+    margin-bottom: 1.6rem;
+}
+
+.techFResultWrapper ul {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
