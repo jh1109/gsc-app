@@ -15,6 +15,7 @@ const TechFResult = () => {
                 <TechFResultItem result="90%">수료율</TechFResultItem>
                 <TechFResultItem result="80%">취업률</TechFResultItem>
             </ul>
+            <p>*'24년.3 글로벌 소프트웨어캠퍼스 내부 데이터 기준</p>
         </div>
     );
 };
