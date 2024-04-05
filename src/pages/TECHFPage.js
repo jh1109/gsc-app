@@ -1,5 +1,6 @@
 import OnlyPBanner from "../components/banner/OnlyPBanner";
 import CardGuide from "../components/bootcamp/CardGuide";
+import Employment from "../components/bootcamp/Employment";
 import KDT from "../components/bootcamp/KDT";
 import TechFResult from "../components/bootcamp/TechFResult";
 
@@ -14,6 +15,7 @@ const TECHFPage = () => {
         <KDT />
             <CardGuide />
             <TechFResult />
+            <Employment />
     </>
 )
 

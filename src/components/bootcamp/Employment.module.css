@@ -1,0 +1,24 @@
+.employmentWrapper {
+    background-color: blue;
+    text-align: center;
+    padding: 3rem 0;
+    color: #ffffff;
+}
+
+.employmentWrapper h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.employmentWrapper img {
+    width: 70%;
+
+    @media (max-width: 1024px) {
+        width: 100%;
+    }
+}
+
+.employmentWrapper p {
+    font-style: italic;
+}
