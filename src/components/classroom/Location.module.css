@@ -1,0 +1,58 @@
+.locationWrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem;
+}
+
+.locationWrapper h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 1.6rem;
+}
+
+.mapWrapper {
+    position: relative;
+}
+
+.mapWrapper img {
+    height: 40rem;
+    width: 100%;
+}
+
+.mapWrapper p {
+    font-weight: 600;
+    background-color: yellow;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    padding: 0.4rem;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.address {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-indent: 0.6rem;
+    padding: 1rem 0;
+}
+
+.transportWrapper {
+    display: flex;
+    padding: 1rem;
+}
+
+.transport {
+    width: 50%;
+}
+
+.transport span {
+    font-weight: 600;
+}
+
+.transport p {
+    line-height: 1.6;
+}
+
