@@ -1,0 +1,17 @@
+.background {
+    background-color: skyblue;
+}
+
+.TECHFReviewWrapper {
+    padding: 3rem 0;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.TECHFReviewWrapper .title {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.6;
+}

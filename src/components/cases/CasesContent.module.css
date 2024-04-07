@@ -1,0 +1,67 @@
+.CasesContentWrapper {
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.casesUl {
+    background-color: #efefef;
+    display: inline-flex;
+    flex-flow: row nowrap;
+    padding: 0.8rem 1.2rem;
+    border-radius: 30px;
+    gap: 0.4rem;
+    align-items: center;
+    margin-bottom: 2.6rem;;
+}
+
+.casesUl li {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.casesUl button {
+    display: block;
+    padding: 0.6rem;
+}
+
+.casesUl button:hover {
+    font-weight: 600;
+}
+
+.casesUl button.active {
+    background-color: blue;
+    border-radius: 20px;
+    color: #ffffff;
+}
+
+.caseListUl {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+}
+
+.searchForm {
+    display: flex;
+    flex-flow: row nowrap;
+    border: 1px solid #000000;
+    border-radius: 10px;    
+    align-items: center;
+    font-size: 1.2rem;
+    margin-top: 5rem;
+}
+
+.searchForm input {
+    text-indent: 0.4rem;
+    width: 26rem;
+}
+
+.searchForm .icon {
+    height: 100%;
+    overflow: hidden;
+    width: 2rem;
+    padding: 0.2rem
+}

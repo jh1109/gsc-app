@@ -1,0 +1,37 @@
+.TECHFReviewItemWrapper {
+    background-color: #ffffff;
+    border-radius: 20px;
+    height: 22rem;
+    margin-bottom: 2rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.studentInfo {
+    position: relative;
+    padding: 1rem;
+    border-bottom: 2px solid #efefef;
+}
+
+.studentInfo div {
+    background-color: red;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10px;
+    position: absolute;
+    top: 2rem;
+    left: 1.2rem;
+}
+
+.studentInfo p {
+    padding-left: 4rem;
+    line-height: 1.4;
+}
+
+.studentInfo p:nth-child(2) {
+    color: blue;
+}
+
+.review {
+    padding: 1rem;
+    line-height: 1.4;
+}

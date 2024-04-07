@@ -1,0 +1,44 @@
+.feeInfoWrapper {
+    background-color: #efefef;
+}
+
+.feeInfoWrapper section {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 3rem 0;
+}
+
+.feeInfoWrapper h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 1.6rem;
+}
+
+.eventArea {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.eventArea p {
+    margin-right: 1rem;
+}
+
+.eventArea a {
+    margin-left: 1rem;
+    color: blue;
+    font-weight: 600;
+}
+
+.detailWrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.detailWrapper li {
+    font-size: 0.8rem;
+}

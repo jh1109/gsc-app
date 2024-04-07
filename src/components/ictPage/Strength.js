@@ -7,7 +7,7 @@ const Strength = () => {
 
     return (
         <div className={classes.strengthWrapper}>
-            <p className="bold bigfont3">글로벌소프트웨어가 <span className="boldBlue">특별한 2가지 이유</span></p>
+            <p className="bold bigfont3">글로벌소프트웨어캠퍼스가 <span className="boldBlue">특별한 2가지 이유</span></p>
             <div className={classes.pZone}>
                 <p>상담 때마다 <span className="bold">이미 정해진 교육 콘텐츠만 소개</span>받으셨나요?</p>
                 <p>글로벌소프트웨어캠퍼스는 비전공자 입장에서 교육 과정을 직접 개발하고</p>

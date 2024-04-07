@@ -1,0 +1,15 @@
+.CaseWrapper {
+    width: 16rem;
+}
+
+.CaseWrapper img {
+    object-fit: cover;
+    overflow: hidden;
+    height: 16rem;
+    width: 100%;
+}
+
+.CaseWrapper p {
+    padding: 0.4rem;
+    line-height: 1.4;
+}

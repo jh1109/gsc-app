@@ -1,0 +1,28 @@
+
+.swiperWrapper img {
+    width: 100%;
+    height: 24rem;
+    border-radius: 20px;
+}
+
+.navigationWrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.navigationWrapper span {
+    font-size: 1.4rem;
+}
+
+.navigationWrapper .arrowIcon {
+    background-color: #efefef;
+    border-radius: 50px;
+    width: 3.4rem;
+    height: 3.4rem;
+    padding: 0.6rem;
+}
+
