@@ -12,7 +12,7 @@ const Service2 = () => {
           <p>교육공간만 필요로 해도 즣습니다. <br /> 교육에만 온전히 집중할 수 있는 강의장을 제공합니다.</p>
         </div>
         <div className={classes.btn_area}>
-          <Link to="/" className={classes.big_btn}>교육장 대관 상세보기</Link>
+          <Link to="/service-classroom" className={classes.big_btn}>교육장 대관 상세보기</Link>
           <Link to="/" className={classes.big_btn}>교육장 대관 문의하기</Link>
         </div>
       </div>

@@ -4,6 +4,7 @@ import ICTBanner from '../components/banner/ICTBanner';
 import EduInfo from '../components/ictPage/EduInfo';
 import Process from '../components/ictPage/Process';
 import Strength from '../components/ictPage/Strength';
+import Footer from '../components/layout/Footer';
 
 const ICTedu = () => {
     return (
@@ -20,6 +21,7 @@ const ICTedu = () => {
                 sub2="문의 내용을 남겨주시면 담당자가 빠른 시일 내에 답변드리겠습니다."
                 btnUrl="/contact"
                 btn="교육 문의하기" />
+        <Footer />
         </main>
     );
 };

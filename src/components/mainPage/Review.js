@@ -20,7 +20,7 @@ const Review = () => {
       </div>
       <p className="smallfont1">&#8251; 교육 종료 후 만족도 설문을 통해 수강생이 100% 직접 작성한 내용입니다.</p>
       <div className={classes.btnArea}>
-        <Link to="/" className="bigfont1 bold">교육후기 바로가기</Link>
+        <Link to="https://blog.naver.com/globalsoftwarecampus" target="_blank" className="bigfont1 bold">교육후기 바로가기</Link>
         <Link to="/service-cases" className="bigfont1 bold">교육사례 바로가기</Link>
       </div>
     </section>
