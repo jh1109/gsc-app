@@ -27,7 +27,7 @@ const KDT = () => {
                     </ul>
                 </div>
                 <div>
-                    <p className={classes.ulTitle}>빅데이터 + 인공지능</p>
+                    <p className={classes.ulTitle}>빅데이터 & 인공지능</p>
                     <ul>
                         {AI.map(data => (
                             <li key={data.id}>
