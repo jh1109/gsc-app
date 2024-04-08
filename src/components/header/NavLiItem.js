@@ -7,7 +7,7 @@ const NavLiItem = ({handleMouseOver, list}) => {
     return (
         <ul className={classes.navLiItem}>
             {list.map((item)=>(
-                <li key={Math.random()}><Link to={item.usrl} onClick={handleMouseOver}>{item.name}</Link></li>
+                <li key={Math.random()}><Link to={item.usrl} onClick={handleMouseOver} className={classes.itemLink }>{item.name}</Link></li>
             ))}
         </ul>
     );
