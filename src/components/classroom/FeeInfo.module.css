@@ -36,7 +36,8 @@
 .detailWrapper {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 5rem;
 }
 
 .detailWrapper li {
