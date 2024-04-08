@@ -7,6 +7,8 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .TECHFReviewWrapper .title {
@@ -14,4 +16,13 @@
     font-size: 1.2rem;
     font-weight: 600;
     line-height: 1.6;
+}
+
+.moreReview {
+    background-color: blue;
+    padding: 1rem 1.4rem;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 10px;
+    margin: 1.4rem auto;
 }
