@@ -30,7 +30,7 @@ const CasesContent = () => {
                 <CaseTabBtn onSelect={()=>handleCaseTabBtn('부트캠프')}>부트캠프</CaseTabBtn><span>|</span>
                 <CaseTabBtn onSelect={()=>handleCaseTabBtn('기타')}>기타</CaseTabBtn>
             </ul>
-            {(caseList.length === 0) ? <p>교육 사례가 없습니다.😨</p> : (
+            {(caseList.length === 0) ? <p className={classes.notCase}>교육 사례가 없습니다.😨</p> : (
                 <ul className={classes.caseListUl}>
                     {caseList.map((item) => (
                         <Case item={item} key={item.id} />

@@ -42,7 +42,7 @@ const Header = () => {
         name: "맞춤형 ICT 교육",
         usrl: "/service-ICTedu"
     },{
-        name: "교육 사례",
+        name: "고객 사례",
         usrl: "/service-cases"
     },{
         name: "교육장 대관",

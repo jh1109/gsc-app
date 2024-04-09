@@ -1,4 +1,3 @@
-import OnlyPBanner from "../components/banner/OnlyPBanner";
 import CardGuide from "../components/bootcamp/CardGuide";
 import Employment from "../components/bootcamp/Employment";
 import KDT from "../components/bootcamp/KDT";
@@ -7,15 +6,18 @@ import TechFResult from "../components/bootcamp/TechFResult";
 import Footer from "../components/layout/Footer";
 import MainBanner from '../components/banner/MainBanner';
 import { Link } from "react-router-dom";
+import ICTBanner from "../components/banner/ICTBanner";
 
 
 const TECHFPage = () => {
     return (
     <>
-        <OnlyPBanner
-                headline="부트캠프"
+            <ICTBanner
+                heading="글로벌소프트웨어캠퍼스의 부트캠프"
                 title="TECH Frontier"
-                sub="기업의 특화 기술 직무 부트캠프, 교육비 0원으로 부담없이 수강하세요!"
+                sub1="기업과 연계한 실무형 프로젝트 중심 부트캠프,"
+                sub2="교육비 0원으로 부담없이 수강해보세요."
+                className="techFBanner"
             />
         <KDT />
             <CardGuide />

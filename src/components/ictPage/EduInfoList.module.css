@@ -16,6 +16,16 @@
     padding-top: 30%;
 }
 
+.list a:hover {
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+.fingerIcon {
+    width: 2rem;
+    height: 2rem;
+    margin-top: 1rem;
+}
+
 .list img {
     border: 1px solid #000000;
     width: 14rem;
@@ -24,3 +34,19 @@
     overflow: hidden;
     object-fit: cover;
 }
+
+/* 반응형 */
+
+@media (max-width: 1024px) {
+
+    .list a {
+        width: 8rem;
+        height: 8rem;
+        padding-top: 30%;
+    }
+
+    .list img {
+        width: 10rem;
+        height: 10rem;
+    }
+  }
