@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 import classes from './NavLiItem.module.css'
 
 
-const NavLiItem = ({handleMouseOver, list}) => {
+const NavLiItem = ({handleDetailNavOut, list }) => {
     return (
         <ul className={classes.navLiItem}>
             {list.map((item)=>(
-                <li key={Math.random()}><Link to={item.usrl} onClick={handleMouseOver} className={classes.itemLink }>{item.name}</Link></li>
+                <li key={Math.random()}><Link to={item.usrl} onClick={handleDetailNavOut} className={classes.itemLink }>{item.name}</Link></li>
             ))}
         </ul>
     );
