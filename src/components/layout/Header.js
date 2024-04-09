@@ -12,17 +12,30 @@ const Header = () => {
     const [onb2b, setOnb2b] = useState(false);
     const [b2bArrow, setb2bArrow] = useState(false);
 
-    const handleMouseOver = () => {
-        setOndetail(!ondetail);
-        setArrow(!arrow);
+    const handleContactDetailNav = () => {
+        setOnContact(true);
+        setContactArrow(true);
     }
-    const handleContact = () => {
-        setOnContact(!onContact);
-        setContactArrow(!contactArrow);
+    const handleContactDetailNavOut = () => {
+        setOnContact(false);
+        setContactArrow(false);
     }
-    const handleB2b = () => {
-        setOnb2b(!onb2b);
-        setb2bArrow(!b2bArrow);
+    const handleB2bDetailNav = () => {
+        setOnb2b(true);
+        setb2bArrow(true);
+    }
+    const handleB2bDetailNavOut = () => {
+        setOnb2b(false);
+        setb2bArrow(false);
+    }
+
+    const handleDetailNav = () => {
+        setOndetail(true);
+        setArrow(true);
+    }
+    const handleDetailNavOut = () => {
+        setOndetail(false);
+        setArrow(false);
     }
 
     const serviceList = [{
@@ -64,19 +77,19 @@ const Header = () => {
             <nav>
                 <h2 className="a11yHidden">메인메뉴</h2>
                 <ul className={classes.nav_list}>
-                    <li className={classes.navLi}>
-                        <button type="button" className={classes.navBtn} onClick={handleMouseOver}>서비스 <IoIosArrowDown className={!arrow ? classes.arrowIcon : classes.arrowIconTrans}/></button>
-                        {ondetail && <NavLiItem handleMouseOver={handleMouseOver} list={serviceList}/>}
+                    <li className={classes.navLi} onMouseEnter={handleDetailNav} onMouseLeave={handleDetailNavOut}>
+                        <button type="button" className={classes.navBtn} >서비스 <IoIosArrowDown className={!arrow ? classes.arrowIcon : classes.arrowIconTrans}/></button>
+                            {ondetail && <NavLiItem handleDetailNavOut={ handleDetailNavOut } list={serviceList} />}
                     </li>
-                    <li className={classes.navLi}>
-                        <button type="button" className={classes.navBtn} onClick={handleB2b}>기업교육 <IoIosArrowDown className={!b2bArrow ? classes.arrowIcon : classes.arrowIconTrans}/></button>
-                        {b2bArrow && <NavLiItem handleMouseOver={handleB2b} list={b2bList}/>}
+                    <li className={classes.navLi} onMouseEnter={handleB2bDetailNav} onMouseLeave={handleB2bDetailNavOut}>
+                        <button type="button" className={classes.navBtn}>기업교육 <IoIosArrowDown className={!b2bArrow ? classes.arrowIcon : classes.arrowIconTrans}/></button>
+                        {onb2b && <NavLiItem handleDetailNavOut={ handleB2bDetailNavOut } list={b2bList}/>}
                     </li>
                     <li className={classes.navLi}><Link to="/techfrontiers">부트캠프</Link></li>
                     <li className={classes.navLi}><Link to="/about">회사소개</Link></li>
-                    <li className={classes.navLi}>
-                        <button type="button" className={classes.navBtn} onClick={handleContact}>문의하기 <IoIosArrowDown className={!contactArrow ? classes.arrowIcon : classes.arrowIconTrans}/></button>
-                        {contactArrow && <NavLiItem handleMouseOver={handleContact} list={contactList}/>}
+                    <li className={classes.navLi} onMouseEnter={handleContactDetailNav} onMouseLeave={handleContactDetailNavOut}>
+                        <button type="button" className={classes.navBtn}>문의하기 <IoIosArrowDown className={!contactArrow ? classes.arrowIcon : classes.arrowIconTrans}/></button>
+                        {onContact && <NavLiItem handleDetailNavOut={ handleContactDetailNavOut } list={contactList}/>}
                     </li>
                 </ul>
             </nav>

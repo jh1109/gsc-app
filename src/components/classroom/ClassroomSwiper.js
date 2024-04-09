@@ -6,7 +6,7 @@ import classes from './ClassroomSwiper.module.css';
 import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 
-const ClassroomSwiper = ({ dataList, alt }) => {
+const ClassroomSwiper = ({ dataList, alt,classroomInfo }) => {
     
     const [swiperIndex, setSwiperIndex] = useState(0);
     const [swiper, setSwiper] = useState();
@@ -20,6 +20,7 @@ const ClassroomSwiper = ({ dataList, alt }) => {
     
     return (
         <div>
+            <p className={classes.titleInfo }>{classroomInfo}</p>
             <Swiper
             spaceBetween={50}
             slidesPerView={2}

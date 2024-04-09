@@ -25,9 +25,6 @@
     padding: 0.8rem 1rem;
     border-radius: 20px;
 }
-.ImageAreaWrapper .test {
-    background-color: blue;
-}
 
 .ImageAreaWrapper ul button:hover {
     background-color: #efefef;

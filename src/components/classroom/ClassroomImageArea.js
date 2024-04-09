@@ -17,11 +17,11 @@ const ClassroomImageArea = () => {
             <ul>
                 <CaseTabBtn className={selectedBtn === '강의장' ? "active" : ""} onSelect={()=>handleCaseTabBtn('강의장')} >강의장</CaseTabBtn>
                     <CaseTabBtn className={selectedBtn === 'STUDIO' ? "active" : ""} onSelect={() => handleCaseTabBtn('STUDIO')}>STUDIO</CaseTabBtn>
-                    <CaseTabBtn className={selectedBtn === '기타' ? "active" : ""} onSelect={() => handleCaseTabBtn('기타')}>기타</CaseTabBtn>
+                    <CaseTabBtn className={selectedBtn === '기타' ? "active" : ""} onSelect={() => handleCaseTabBtn('기타')}>편의시설</CaseTabBtn>
             </ul>
-                {selectedBtn === '강의장' && <ClassroomSwiper dataList={CLASSROOM_IMAGE_DATA} alt="강의장 사진" />}
-                {selectedBtn === 'STUDIO' && <ClassroomSwiper dataList={STUDIO_IMAGE_DATA} alt="studio 사진" />}
-                {selectedBtn === '기타' && <ClassroomSwiper dataList={ETC_IMAGE_DATA} alt="강의장 사진" />}
+                {selectedBtn === '강의장' && <ClassroomSwiper dataList={CLASSROOM_IMAGE_DATA} alt="강의장 사진" classroomInfo="TECH 1 ~ 5 (5개 강의장)" />}
+                {selectedBtn === 'STUDIO' && <ClassroomSwiper dataList={STUDIO_IMAGE_DATA} alt="studio 사진" classroomInfo="TECH 6 ~ 10 (5개 STUDIO)" />}
+                {selectedBtn === '기타' && <ClassroomSwiper dataList={ETC_IMAGE_DATA} alt="강의장 사진" classroomInfo="휴게실 및 안내데스크" />}
         </section>
         </div>
     );

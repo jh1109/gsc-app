@@ -2,7 +2,6 @@
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
-    margin-top: 1.3rem;
     align-items: center;
     position: absolute;
     border-radius: 0 0 10px 10px;
@@ -11,8 +10,6 @@
   }
 
   .navLiItem li {
-    /* background-color: skyblue; */
-    padding: 0.8rem;
     width: 100%;
   }
   
@@ -21,12 +18,12 @@
     overflow: hidden;
   }
   .navLiItem li:hover:last-child {
-    /* background-color: #efefef; */
-    /* overflow: hidden; */
     border-radius: 0 0 10px 10px;
   
   }
   
-  .navLiItem li a {
+  .itemLink {
     cursor: pointer;
+    display: block;
+    height: 100%;
   }

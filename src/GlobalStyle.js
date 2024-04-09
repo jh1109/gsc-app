@@ -14,6 +14,7 @@ ${reset}
     height: 100vh;
     background: white;
     margin: auto;
+    margin-top: 70px;
 
     @media (max-width: 768px) {
       width: 100%;
