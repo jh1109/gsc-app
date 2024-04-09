@@ -79,6 +79,9 @@
 }
 
 @media (max-width: 768px) {
+  .main_banner {
+    padding: 4rem;
+  }
   .main_banner h2 {
     font-size: 1.2rem;
   }
