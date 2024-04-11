@@ -10,7 +10,9 @@ const CasesContent = () => {
     const [caseList, setCaseList] = useState(CASES_DATA);
     const [page, setPage] = useState(1);
     const limit = 3;
-    const offset = (page-1)*limit;
+    const offset = (page - 1) * limit;
+    const [selectedBtn, setSelectedBtn] = useState('전체');
+    
 
     const postsData = (posts) => {
     if(posts){
@@ -19,16 +21,17 @@ const CasesContent = () => {
     }
     }
 
-
     function handleCaseTabBtn(selectedBtn) {
         const selectedCaseList = CASES_DATA.filter((caseItem) => (
             caseItem.group === selectedBtn
         ));
+        setSelectedBtn(selectedBtn);
         setCaseList(selectedCaseList);
     }
 
     function handleAll() {
         setCaseList(CASES_DATA);
+        setSelectedBtn('전체');
     }
 
     const CASELIST = postsData(caseList);
@@ -36,12 +39,12 @@ const CasesContent = () => {
     return (
         <div className={`${"mainContent"} ${classes.CasesContentWrapper}`}>
             <ul className={classes.casesUl}>
-                <CaseTabBtn onSelect={handleAll}>전체</CaseTabBtn><span>|</span>
-                <CaseTabBtn onSelect={()=>handleCaseTabBtn('기업')}>기업</CaseTabBtn><span>|</span>
-                <CaseTabBtn onSelect={()=>handleCaseTabBtn('기관')}>기관</CaseTabBtn><span>|</span>
-                <CaseTabBtn onSelect={()=>handleCaseTabBtn('학교')}>학교</CaseTabBtn><span>|</span>
-                <CaseTabBtn onSelect={()=>handleCaseTabBtn('부트캠프')}>부트캠프</CaseTabBtn><span>|</span>
-                <CaseTabBtn onSelect={()=>handleCaseTabBtn('기타')}>기타</CaseTabBtn>
+                <CaseTabBtn className={selectedBtn === '전체' ? "active" : ""} onSelect={handleAll}>전체</CaseTabBtn><span>|</span>
+                <CaseTabBtn className={selectedBtn === '기업' ? "active" : ""} onSelect={()=>handleCaseTabBtn('기업')}>기업</CaseTabBtn><span>|</span>
+                <CaseTabBtn className={selectedBtn === '기관' ? "active" : ""} onSelect={()=>handleCaseTabBtn('기관')}>기관</CaseTabBtn><span>|</span>
+                <CaseTabBtn className={selectedBtn === '학교' ? "active" : ""} onSelect={()=>handleCaseTabBtn('학교')}>학교</CaseTabBtn><span>|</span>
+                <CaseTabBtn className={selectedBtn === '부트캠프' ? "active" : ""} onSelect={()=>handleCaseTabBtn('부트캠프')}>부트캠프</CaseTabBtn><span>|</span>
+                <CaseTabBtn className={selectedBtn === '기타' ? "active" : ""} onSelect={()=>handleCaseTabBtn('기타')}>기타</CaseTabBtn>
             </ul>
             {(CASELIST.length === 0) ? <p className={classes.notCase}>교육 사례가 없습니다.😨</p> : (
                 <ul className={classes.caseListUl}>

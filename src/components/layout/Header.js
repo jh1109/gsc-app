@@ -85,8 +85,8 @@ const Header = () => {
                         <button type="button" className={classes.navBtn}>기업교육 <IoIosArrowDown className={!b2bArrow ? classes.arrowIcon : classes.arrowIconTrans}/></button>
                         {onb2b && <NavLiItem handleDetailNavOut={ handleB2bDetailNavOut } list={b2bList}/>}
                     </li>
-                    <li className={classes.navLi}><Link to="/TECHF">부트캠프</Link></li>
-                    <li className={classes.navLi}><Link to="/aboutgsc">회사소개</Link></li>
+                    <li className={classes.navLi}><Link to="/TECHF" className={classes.headerLink}>부트캠프</Link></li>
+                    <li className={classes.navLi}><Link to="/aboutgsc" className={classes.headerLink}>회사소개</Link></li>
                     <li className={classes.navLi} onMouseEnter={handleContactDetailNav} onMouseLeave={handleContactDetailNavOut}>
                         <button type="button" className={classes.navBtn}>문의하기 <IoIosArrowDown className={!contactArrow ? classes.arrowIcon : classes.arrowIconTrans}/></button>
                         {onContact && <NavLiItem handleDetailNavOut={ handleContactDetailNavOut } list={contactList}/>}

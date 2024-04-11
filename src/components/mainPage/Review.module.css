@@ -25,3 +25,11 @@
 .btnArea {
   margin: 1rem;
 }
+
+.btnArea a {
+  background-color: rgba(0, 0, 225, 0.75);
+}
+
+.btnArea a:hover {
+  background-color: blue;
+}
