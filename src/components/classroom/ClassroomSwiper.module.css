@@ -5,6 +5,10 @@
     margin-bottom: 1rem;
 }
 
+.swiperWrapper {
+    padding-right: 1rem;
+}
+
 
 .swiperWrapper img {
     width: 100%;
