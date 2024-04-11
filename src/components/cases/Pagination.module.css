@@ -1,0 +1,6 @@
+.pagenationSection {
+    margin-top: 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 0.6rem;
+}
