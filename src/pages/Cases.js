@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import CasesContent from '../components/cases/CasesContent';
 import Footer from '../components/layout/Footer';
 import ICTBanner from '../components/banner/ICTBanner';
 
 const Cases = () => {
+    useEffect(() => {
+        const titleElement = document.getElementsByTagName('title')[0];
+        titleElement.innerHTML = "GSC - 고객 사례"
+    })
     return (
         <>
             <ICTBanner

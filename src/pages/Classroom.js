@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ClassroomBanner from '../components/banner/ClassroomBanner';
 import ClassroomImageArea from '../components/classroom/ClassroomImageArea';
 import FeeInfo from '../components/classroom/FeeInfo';
@@ -9,6 +9,10 @@ import { Link } from 'react-router-dom';
 
 
 const Classroom = () => {
+    useEffect(() => {
+        const titleElement = document.getElementsByTagName('title')[0];
+        titleElement.innerHTML = "GSC - 교육장 대관"
+    })
     return (
         <div>
             <ClassroomBanner />

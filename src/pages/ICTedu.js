@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import EduInfo from '../components/ictPage/EduInfo';
 import Process from '../components/ictPage/Process';
 import Strength from '../components/ictPage/Strength';
@@ -8,6 +8,11 @@ import ICTBanner from '../components/banner/ICTBanner';
 import { Link } from 'react-router-dom';
 
 const ICTedu = () => {
+    useEffect(() => {
+        const titleElement = document.getElementsByTagName('title')[0];
+        titleElement.innerHTML = "GSC - 맞춤형 ICT 교육"
+    })
+
     return (
         <main>
             <div className="mainContent">

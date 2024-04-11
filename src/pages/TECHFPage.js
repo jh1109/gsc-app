@@ -7,9 +7,14 @@ import Footer from "../components/layout/Footer";
 import MainBanner from '../components/banner/MainBanner';
 import { Link } from "react-router-dom";
 import ICTBanner from "../components/banner/ICTBanner";
+import { useEffect } from "react";
 
 
 const TECHFPage = () => {
+    useEffect(() => {
+        const titleElement = document.getElementsByTagName('title')[0];
+        titleElement.innerHTML = "GSC - 부트캠프"
+    })
     return (
     <>
             <ICTBanner

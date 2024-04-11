@@ -7,8 +7,13 @@ import Footer from "../components/layout/Footer";
 import ClientArea from "./ClientArea";
 import { Link } from "react-router-dom";
 import ContactBanner from "../components/banner/ContactBanner";
+import { useEffect } from "react";
 
 const MainPage = () => {
+    useEffect(() => {
+        const titleElement = document.getElementsByTagName('title')[0];
+        titleElement.innerHTML = "글로벌소프트웨어캠퍼스"
+    })
     return (
         <>
             <MainBanner
