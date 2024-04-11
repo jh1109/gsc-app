@@ -46,7 +46,9 @@ const ClassroomBanner = () => {
                     </StrengthItem>
 
                 </ul>
-            <Link to="/contact-classroom" >대관 문의하기</Link>
+            <Link to="https://booking.naver.com/booking/10/bizes/548221/items/3997384?area=ple&startDate=2024-04-11"
+                target="_blank"
+            >대관 문의하기</Link>
         </div>
     );
 };

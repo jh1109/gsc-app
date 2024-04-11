@@ -18,7 +18,7 @@ const ICTedu = () => {
                     sub2="당신의 성장을 위한 최적의 교육 솔루션을 만나보세요."
                     className="ictBanner"
                 >
-                    <Link to="/">교육 문의하기</Link>
+                    <Link to="/contact">교육 문의하기</Link>
                 </ICTBanner>
             <EduInfo/>
             <Process />

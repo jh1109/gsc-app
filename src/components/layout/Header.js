@@ -43,27 +43,27 @@ const Header = () => {
         usrl: "/service-ICTedu"
     },{
         name: "고객 사례",
-        usrl: "/service-cases"
+        usrl: "/service-educases"
     },{
         name: "교육장 대관",
-        usrl: "/service-classroom"
+        usrl: "/service-academy"
     }]
     const b2bList = [{
         name: "신입사원 DX",
-        usrl: "/b2b-ojtDX"
+        usrl: "/b2b-newcomerDX"
     },{
         name: "재직자 DX",
-        usrl: "/b2b-teamsDX"
+        usrl: "/b2b-juniorDX"
     },{
         name: "C-Level DX",
-        usrl: "/b2b-CLevelDX"
+        usrl: "/b2b-seniorDX"
     }]
     const contactList = [{
         name: "교육 문의하기",
         usrl: "/contact"
     },{
         name: "교육장 대관하기",
-        usrl: "/contact-classroom"
+        usrl: "https://booking.naver.com/booking/10/bizes/548221/items/3997384?area=ple&startDate=2024-04-11"
     }]
 
     return (
@@ -85,8 +85,8 @@ const Header = () => {
                         <button type="button" className={classes.navBtn}>기업교육 <IoIosArrowDown className={!b2bArrow ? classes.arrowIcon : classes.arrowIconTrans}/></button>
                         {onb2b && <NavLiItem handleDetailNavOut={ handleB2bDetailNavOut } list={b2bList}/>}
                     </li>
-                    <li className={classes.navLi}><Link to="/techfrontiers">부트캠프</Link></li>
-                    <li className={classes.navLi}><Link to="/about">회사소개</Link></li>
+                    <li className={classes.navLi}><Link to="/TECHF">부트캠프</Link></li>
+                    <li className={classes.navLi}><Link to="/aboutgsc">회사소개</Link></li>
                     <li className={classes.navLi} onMouseEnter={handleContactDetailNav} onMouseLeave={handleContactDetailNavOut}>
                         <button type="button" className={classes.navBtn}>문의하기 <IoIosArrowDown className={!contactArrow ? classes.arrowIcon : classes.arrowIconTrans}/></button>
                         {onContact && <NavLiItem handleDetailNavOut={ handleContactDetailNavOut } list={contactList}/>}

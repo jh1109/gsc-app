@@ -17,7 +17,9 @@ const FeeInfo = () => {
                 <div className={classes.eventArea}>
                     <p>강의장 장기 이용 시 비용 조정 가능!</p>
                     <TbArrowBigRightLines /><TbArrowBigRightLines />
-                    <Link to="/contact-classroom">교육장 대관 문의하기</Link>
+                    <Link to="https://booking.naver.com/booking/10/bizes/548221/items/3997384?area=ple&startDate=2024-04-11"
+                        target="_blank"
+                    >교육장 대관 문의하기</Link>
                 </div>
                 <div className={classes.detailWrapper}>
                     <FeeDetail title="PC 강의장" sub="1일 8시간 700,000원" subject1="TECH 1 ~ 3 강의장(3개 강의장)" comment="시간 초과 시 시간당 비용 발생">
