@@ -10,7 +10,6 @@ import RootLayout from './pages/Root';
 import ICTedu from './pages/ICTedu';
 import Cases from './pages/Cases';
 import Classroom from './pages/Classroom';
-import ContactClassroom from './pages/ContactClassroom';
 import CLevelDX from './pages/CLevelDX';
 import TeamsDX from './pages/TeamsDX';
 import OjtDX from './pages/OjtDX';
@@ -23,15 +22,14 @@ const router = createBrowserRouter([
       { path: '/', element: <MainPage />},
       { path: '/contact', element: <ContactPage />},
       { path: '/b2b', element: <B2BPage />},
-      { path: '/techfrontiers', element: <TECHFPage />},
-      { path: '/about', element: <AboutPage />},
+      { path: '/TECHF', element: <TECHFPage />},
+      { path: '/aboutgsc', element: <AboutPage />},
       { path: '/service-ICTedu', element: <ICTedu />},
-      { path: '/service-cases', element: <Cases />},
-      { path: '/service-classroom', element: <Classroom />},
-      { path: '/contact-classroom', element: <ContactClassroom />},
-      { path: '/b2b-ojtDX', element: <OjtDX />},
-      { path: '/b2b-teamsDX', element: <TeamsDX />},
-      { path: '/b2b-CLevelDX', element: <CLevelDX />},
+      { path: '/service-educases', element: <Cases />},
+      { path: '/service-academy', element: <Classroom />},
+      { path: '/b2b-newcomerDX', element: <OjtDX />},
+      { path: '/b2b-juniorDX', element: <TeamsDX />},
+      { path: '/b2b-seniorDX', element: <CLevelDX />},
     ],
   },
 

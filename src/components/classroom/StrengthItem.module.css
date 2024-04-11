@@ -10,9 +10,9 @@
     width: 16rem;
     text-align: center;
     color: #ffffff;
-    gap: 1.4rem;
 }
 
-.strengthItemWrapper p {
-    line-height: 1.4;
+.strengthItemWrapper p:nth-child(2) {
+    margin-top: 1.4rem;
+    line-height: 1.6;
 }

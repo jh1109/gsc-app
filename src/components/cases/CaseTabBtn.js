@@ -3,7 +3,8 @@ import React from 'react';
 const CaseTabBtn = ({ children, onSelect, className }) => {
     const style = {
         background: "blue",
-        color: "#ffffff"
+        color: "#ffffff",
+        borderRadius: "20px",
     };
 
     

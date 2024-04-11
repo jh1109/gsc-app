@@ -15,7 +15,7 @@ const Service = () => {
         <div className={classes.btn_area}>
           <Link to="/service-ICTedu" className={classes.big_btn}>맞춤형ICT교육 상세보기</Link>
           <Link to="/b2b" className={classes.small_btn}>기업교육 바로가기</Link>
-          <Link to="/techfrontiers" className={classes.small_btn}>부트캠프 바로가기</Link>
+          <Link to="/TECHF" className={classes.small_btn}>부트캠프 바로가기</Link>
         </div>
       </div>
 

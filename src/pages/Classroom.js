@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ClassroomBanner from '../components/banner/ClassroomBanner';
 import ClassroomImageArea from '../components/classroom/ClassroomImageArea';
 import FeeInfo from '../components/classroom/FeeInfo';
@@ -9,6 +9,10 @@ import { Link } from 'react-router-dom';
 
 
 const Classroom = () => {
+    useEffect(() => {
+        const titleElement = document.getElementsByTagName('title')[0];
+        titleElement.innerHTML = "GSC - 교육장 대관"
+    })
     return (
         <div>
             <ClassroomBanner />
@@ -21,7 +25,9 @@ const Classroom = () => {
                 sub2="문의 내용을 남겨주시면 담당자가 빠른 시일 내에 답변드리겠습니다."
                 className="mainPageContact"
             >
-                <Link to="/contact-classroom">교육장 대관 문의하기</Link>
+                <Link to="https://booking.naver.com/booking/10/bizes/548221/items/3997384?area=ple&startDate=2024-04-11"
+                    target="_blank"
+                >교육장 대관 문의하기</Link>
             </MainBanner>
             <Footer />
         </div>

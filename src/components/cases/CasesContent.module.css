@@ -32,7 +32,7 @@
     font-weight: 600;
 }
 
-.casesUl button.active {
+.caseUl .active {
     background-color: blue;
     border-radius: 20px;
     color: #ffffff;
