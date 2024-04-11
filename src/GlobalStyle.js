@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
+import Pretendard from '../src/styles/fonts/Pretendard-Regular.woff';
 
 const GlobalStyle = createGlobalStyle`
 ${reset}
@@ -8,6 +9,12 @@ ${reset}
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+  }
+
+  body {
+    font-family: 'Pretendard';
+    font-style: normal;
+    src: url(${Pretendard}) format('truetype');
   }
 
   main {
